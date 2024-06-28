@@ -11,7 +11,7 @@ import (
 )
 
 var (
-	GitCommit string
+	GitCommit = "unknown"
 )
 
 type args struct {

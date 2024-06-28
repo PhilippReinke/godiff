@@ -48,12 +48,12 @@ func main() {
 	dir.CheckExistenceWithExit(args.Path1, args.Path2)
 
 	// recursively read all files and directories
-	dir1, err := dir.NewDir(args.Path1)
+	dir1, err := dir.ReadDir(args.Path1)
 	if err != nil {
 		fmt.Printf("Error reading directory: %v\n", err)
 		os.Exit(1)
 	}
-	dir2, err := dir.NewDir(args.Path2)
+	dir2, err := dir.ReadDir(args.Path2)
 	if err != nil {
 		fmt.Printf("Error reading directory: %v\n", err)
 		os.Exit(1)

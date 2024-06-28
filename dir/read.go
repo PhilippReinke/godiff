@@ -12,7 +12,7 @@ type Dir struct {
 
 type Files map[string]os.FileInfo
 
-func NewDir(path string) (Dir, error) {
+func ReadDir(path string) (Dir, error) {
 	files, err := read(path)
 	if err != nil {
 		return Dir{}, err

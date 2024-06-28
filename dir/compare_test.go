@@ -7,12 +7,12 @@ import (
 )
 
 func TestCompare(t *testing.T) {
-	testDir1, _ := NewDir("testdata/dir1")
-	testDir2, _ := NewDir("testdata/dir2")
-	testDir3, _ := NewDir("testdata/dir3")
-	testDir4, _ := NewDir("testdata/dir4")
-	testDir5, _ := NewDir("testdata/dir5")
-	testDir6, _ := NewDir("testdata/dir6")
+	testDir1, _ := ReadDir("testdata/dir1")
+	testDir2, _ := ReadDir("testdata/dir2")
+	testDir3, _ := ReadDir("testdata/dir3")
+	testDir4, _ := ReadDir("testdata/dir4")
+	testDir5, _ := ReadDir("testdata/dir5")
+	testDir6, _ := ReadDir("testdata/dir6")
 
 	testCases := []struct {
 		dir1, dir2        Dir
